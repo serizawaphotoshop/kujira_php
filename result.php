@@ -23,4 +23,8 @@ if($subject==="coffee"){
     echo "あああ";
 }
 
-echo $message;
+if(mb_strlen($message)>10){
+    echo "文字数が多すぎます";
+}else{
+    echo $message;
+}
