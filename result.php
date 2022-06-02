@@ -1,13 +1,26 @@
 <?php
+
+// null合体演算子
+// $_POST['how'] = $_POST['how'] ?? "未選択";
+
+// null合体演算子の書き換え
+if(!isset($_POST['how'])){//howになにか入力されている状態ではない場合に（isset）
+    $_POST['how'] = "未選択";//$_POSTに未選択と言う文字列を代入する
+}
+
 $kind= $_POST['kind'];
 $first= $_POST['first'];
-// $how= $_POST['how'];
+$how= $_POST['how'];
 $subject= $_POST['subject'];
 $message= $_POST['message'];
 
-// if($subject===null){
+// $how = $how ?? "未選択";
+// echo $how;
+// if($how===null){
 //     echo "何も選択されていません";
 // }
+
+echo "きっかけ:" . $how . "<br>";
 
 if($kind==="1"){
     echo "ご予約";
