@@ -155,6 +155,9 @@ select{
 input[name="subject"]{
     width: 30em; 
 }
+input[name="address"]{
+    width: 30em;
+}
 textarea{
     width: 30em;
     height: 6em;
@@ -215,4 +218,15 @@ input[type="submit"]{
         margin: 20px 0;
         width: 100%;
     }
+}
+
+.formdiv{
+    padding: 12px;
+    border-bottom: 1px dashed #bec2c7;
+}
+.formdiv dt{
+    color: #3f5170;
+    font-size: 18px;
+    font-weight: bold;
+
 }

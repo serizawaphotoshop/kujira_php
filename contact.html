@@ -10,8 +10,8 @@
     <div class="wrapper">
         <!-- ヘッダー -->
         <header class="header">
-            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="KUJIRA Cafe"></a></h1>
-            <nav class="nav">
+            <h1 class="logo"><a href="index.html"><img src="logo.png" alt="KUJIRA Cafe"></a></h1>
+            <!-- <nav class="nav">
                 <ul>
                     <li><a href="index.html">ホーム</a></li>
                     <li><a href="about.html">店舗案内</a></li>
@@ -19,13 +19,13 @@
                     <li><a href="menu.html">メニュー</a></li>
                     <li><a href="contact.html">お問い合わせ</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
         <!-- ヘッダーここまで -->
         <!-- メイン -->
         <main>
             <h2>お問い合わせ</h2>
-            <form method="POST" action="result.php">
+            <form method="POST" action="result2.php">
                 <div>
                     <label for="kind">お問い合わせの種類</label><br>
                     <select id="kind" name="kind">
@@ -52,6 +52,11 @@
                 <div>
                     <label>お問い合わせの具体的な内容(10文字以内)<br>
                     <textarea name="message"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <label for="address">メールアドレス<br>
+                    <input type="email" name="address">
                     </label>
                 </div>
                 <div>
