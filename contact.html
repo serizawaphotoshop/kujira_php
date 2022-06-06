@@ -27,6 +27,19 @@
             <h2>お問い合わせ</h2>
             <form method="POST" action="result2.php">
                 <div>
+                    <label for="fullname">氏名<br>
+                    <input type="text" name="fullname">
+                    </label>
+                </div>
+                <div>
+                    <label for="address">メールアドレス<br>
+                    <input type="email" name="address" pattern="[\w\d_-]+@[\w\d_-]+\.[\w\d._-]+" required />
+                    <p class="error">
+                        <span class="invalid">正しいメールアドレスの形式で入力して下さい</span>
+                    </p>
+                    </label>
+                </div>
+                <div>
                     <label for="kind">お問い合わせの種類</label><br>
                     <select id="kind" name="kind">
                         <option value="1">ご予約</option>
@@ -41,22 +54,17 @@
                 </div>
                 <div>
                     当カフェをお知りになったきっかけは？<br>
-                    <label><input type="checkbox" name="how" value="friend">知り合いの紹介で</label>
-                    <label><input type="checkbox" name="how" value="magazine">雑誌・Webサイトで見て</label>
+                    <label><input type="checkbox" name="howFriend" value="friend">知り合いの紹介で</label>
+                    <label><input type="checkbox" name="howMagazine" value="magazine">雑誌・Webサイトで見て</label>
                 </div>
                 <div>
                     <label>お問い合わせの件名<br>
-                    <input type="text" name="subject" placeholder="「coffee」と入力してください">
+                    <input type="text" name="subject" placeholder="">
                     </label>
                 </div>
                 <div>
-                    <label>お問い合わせの具体的な内容(10文字以内)<br>
+                    <label>お問い合わせの具体的な内容(20文字以内)<br>
                     <textarea name="message"></textarea>
-                    </label>
-                </div>
-                <div>
-                    <label for="address">メールアドレス<br>
-                    <input type="email" name="address">
                     </label>
                 </div>
                 <div>
